@@ -5,8 +5,6 @@ export interface GitHubStackProps extends StackProps {
     readonly repositoryConfig: { owner: string; repo: string; filter?: string }[];
 }
 
-export type defaultBranch = 'main'
-
 export interface repositoryIdentityConfig {
     /**
    * This is the Owner for the repo can be username or organisation name
@@ -21,7 +19,7 @@ export interface repositoryIdentityConfig {
     /**
    * Branch that is allowed to assume role. Either targets all branches or one branch .e.g main
    * To select all branches use *
-   * @default - 'main'
+   * @default - 'ref:refs/heads/main'
    */
     branchFilter?: string;
     //
