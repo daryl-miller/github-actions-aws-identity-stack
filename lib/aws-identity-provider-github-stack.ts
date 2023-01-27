@@ -14,7 +14,7 @@ function createGithubDeployRole(scope: Construct, githubOIDCProvider: OpenIdConn
       },
       StringLike: {
         "token.actions.githubusercontent.com:sub":
-        `repo:${config.owner}/${config.repository}:${config.branchFilter ?? '*'}`, 
+        `repo:${config.owner}/${config.repository}:${config.branchFilter ?? 'main'}`, 
       },
     }),
     roleName: `${name}-GithubDeployRole`,
