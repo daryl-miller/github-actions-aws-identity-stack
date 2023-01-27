@@ -8,6 +8,7 @@ import { repositoryConfigs } from '../lib/config'
 const app = new cdk.App();
 new AwsIdentityProviderGithubStack(app, 'AwsIdentityProviderGithubStack', repositoryConfigs, {
     env: {
-        account: '589560249530'
+        account: '589560249530',
+        region: 'ap-southeast-2'
     }
 });
