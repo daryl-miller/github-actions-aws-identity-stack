@@ -10,4 +10,10 @@ export const repositoryConfigs: repositoryIdentityConfig[] = [
         policyStatements: [],
         managedPolicies: [ManagedPolicy.fromAwsManagedPolicyName('AdministratorAccess')]
      },
+     { 
+        owner: 'daryl-miller',
+        repository: 'cdk-iam', 
+        policyStatements: [],
+        managedPolicies: [ManagedPolicy.fromAwsManagedPolicyName('AdministratorAccess')]
+     },
 ]
