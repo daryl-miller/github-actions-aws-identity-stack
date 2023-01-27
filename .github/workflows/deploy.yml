@@ -26,4 +26,4 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: CDK deploy
-        run: npx cdk deploy 
+        run: npx cdk deploy --require-approval never
